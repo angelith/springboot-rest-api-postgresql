@@ -1,6 +1,6 @@
-package com.example.sakis.spring.rest.api.prosgresql.controller;
+package com.example.sakis.spring.rest.api.postgresql.controller;
 
-import com.example.sakis.spring.rest.api.prosgresql.db.model.Match;
+import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 

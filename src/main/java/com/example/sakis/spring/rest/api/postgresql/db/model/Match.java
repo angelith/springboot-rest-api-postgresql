@@ -1,4 +1,4 @@
-package com.example.sakis.spring.rest.api.prosgresql.db.model;
+package com.example.sakis.spring.rest.api.postgresql.db.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;

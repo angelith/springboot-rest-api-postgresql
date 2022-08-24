@@ -1,9 +1,9 @@
-package com.example.sakis.spring.rest.api.prosgresql.controller;
+package com.example.sakis.spring.rest.api.postgresql.controller;
 
-import com.example.sakis.spring.rest.api.prosgresql.db.model.Match;
-import com.example.sakis.spring.rest.api.prosgresql.db.model.MatchOdd;
-import com.example.sakis.spring.rest.api.prosgresql.service.MatchOddsService;
-import com.example.sakis.spring.rest.api.prosgresql.service.MatchService;
+import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
+import com.example.sakis.spring.rest.api.postgresql.db.model.MatchOdd;
+import com.example.sakis.spring.rest.api.postgresql.service.MatchOddsService;
+import com.example.sakis.spring.rest.api.postgresql.service.MatchService;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

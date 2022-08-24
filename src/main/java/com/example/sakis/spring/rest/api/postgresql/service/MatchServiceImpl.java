@@ -1,8 +1,8 @@
-package com.example.sakis.spring.rest.api.prosgresql.service;
+package com.example.sakis.spring.rest.api.postgresql.service;
 
-import com.example.sakis.spring.rest.api.prosgresql.controller.MatchRequest;
-import com.example.sakis.spring.rest.api.prosgresql.db.model.Match;
-import com.example.sakis.spring.rest.api.prosgresql.repository.MatchRepository;
+import com.example.sakis.spring.rest.api.postgresql.controller.MatchRequest;
+import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
+import com.example.sakis.spring.rest.api.postgresql.repository.MatchRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.data.util.Streamable;

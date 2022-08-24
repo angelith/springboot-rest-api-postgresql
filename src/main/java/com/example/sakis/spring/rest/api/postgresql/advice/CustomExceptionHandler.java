@@ -1,6 +1,6 @@
-package com.example.sakis.spring.rest.api.prosgresql.advice;
+package com.example.sakis.spring.rest.api.postgresql.advice;
 
-import com.example.sakis.spring.rest.api.prosgresql.exception.ErrorResponse;
+import com.example.sakis.spring.rest.api.postgresql.exception.ErrorResponse;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,13 +14,13 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<ErrorResponse> handleResourceNotFoundExceptions(ResourceNotFoundException ex, WebRequest webRequest){
-        ErrorResponse errorResponse = new ErrorResponse("Sorry some other time ;) - " + ex.getLocalizedMessage());
+        ErrorResponse errorResponse = new ErrorResponse("Not found - Sorry some other time ;) - " + ex.getLocalizedMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<ErrorResponse> handleResourceNotFoundExceptions(IllegalArgumentException ex, WebRequest webRequest){
-        ErrorResponse errorResponse = new ErrorResponse("Sorry some other time ;) - " + ex.getLocalizedMessage());
+        ErrorResponse errorResponse = new ErrorResponse("Wrong argument - " + ex.getLocalizedMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 

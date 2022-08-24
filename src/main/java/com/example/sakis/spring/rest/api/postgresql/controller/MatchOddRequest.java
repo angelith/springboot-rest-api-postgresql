@@ -1,8 +1,6 @@
-package com.example.sakis.spring.rest.api.prosgresql.controller;
+package com.example.sakis.spring.rest.api.postgresql.controller;
 
 import lombok.Data;
-
-import javax.persistence.Column;
 
 @Data
 public class MatchOddRequest {

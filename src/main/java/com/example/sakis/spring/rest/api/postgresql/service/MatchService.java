@@ -1,7 +1,7 @@
-package com.example.sakis.spring.rest.api.prosgresql.service;
+package com.example.sakis.spring.rest.api.postgresql.service;
 
-import com.example.sakis.spring.rest.api.prosgresql.controller.MatchRequest;
-import com.example.sakis.spring.rest.api.prosgresql.db.model.Match;
+import com.example.sakis.spring.rest.api.postgresql.controller.MatchRequest;
+import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
 
 import java.util.Collection;
 

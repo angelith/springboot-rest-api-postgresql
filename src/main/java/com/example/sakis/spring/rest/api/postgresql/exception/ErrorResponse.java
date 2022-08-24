@@ -1,4 +1,4 @@
-package com.example.sakis.spring.rest.api.prosgresql.exception;
+package com.example.sakis.spring.rest.api.postgresql.exception;
 
 import lombok.Data;
 
