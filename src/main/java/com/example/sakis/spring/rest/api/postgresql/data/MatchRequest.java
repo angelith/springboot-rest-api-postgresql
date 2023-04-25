@@ -1,4 +1,4 @@
-package com.example.sakis.spring.rest.api.postgresql.controller;
+package com.example.sakis.spring.rest.api.postgresql.data;
 
 import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
 import com.fasterxml.jackson.annotation.JsonFormat;

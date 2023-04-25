@@ -1,4 +1,4 @@
-package com.example.sakis.spring.rest.api.postgresql.controller;
+package com.example.sakis.spring.rest.api.postgresql.data;
 
 import lombok.Data;
 
