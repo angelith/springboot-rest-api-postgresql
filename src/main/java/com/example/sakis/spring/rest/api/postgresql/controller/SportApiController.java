@@ -1,5 +1,7 @@
 package com.example.sakis.spring.rest.api.postgresql.controller;
 
+import com.example.sakis.spring.rest.api.postgresql.data.MatchOddRequest;
+import com.example.sakis.spring.rest.api.postgresql.data.MatchRequest;
 import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
 import com.example.sakis.spring.rest.api.postgresql.db.model.MatchOdd;
 import com.example.sakis.spring.rest.api.postgresql.service.MatchOddsService;
@@ -39,7 +41,7 @@ public class SportApiController {
 
     @PostMapping(path = "/matches")
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<Void> createMatch(@RequestBody@Valid final MatchRequest matchRequest){
+    public ResponseEntity<Void> createMatch(@RequestBody@Valid final MatchRequest matchRequest) throws Throwable {
         Match match = matchService.create(matchRequest);
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
