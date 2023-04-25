@@ -1,7 +1,11 @@
 package com.example.sakis.spring.rest.api.postgresql.repository;
 
 import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MatchRepository extends CrudRepository<Match, Long> {
+import java.util.Date;
+import java.util.Optional;
+
+public interface MatchRepository extends JpaRepository<Match, Long> {
+    Optional<Match> findByMatchDateAndMatchTime(Date matchDate, Date matchTime);
 }

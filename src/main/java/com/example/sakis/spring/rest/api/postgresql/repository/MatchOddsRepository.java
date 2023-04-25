@@ -1,7 +1,11 @@
 package com.example.sakis.spring.rest.api.postgresql.repository;
 
+import com.example.sakis.spring.rest.api.postgresql.db.model.Match;
 import com.example.sakis.spring.rest.api.postgresql.db.model.MatchOdd;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MatchOddsRepository extends CrudRepository<MatchOdd, Long> {
+import java.util.Optional;
+
+public interface MatchOddsRepository extends JpaRepository<MatchOdd, Long> {
+    Optional<MatchOdd> getMatchOddByMatchAndSpecifier(Match match, String specifier);
 }
